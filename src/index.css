@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-display: "Inter";
+}
+
+@layer utilities {
+  @media (max-width: 1500px) {
+    .max-\[1500px\]\:hidden {
+      display: none;
+    }
+
+    .max-\[1500px\]\:visible {
+      display: block;
+    }
+  }
+}
