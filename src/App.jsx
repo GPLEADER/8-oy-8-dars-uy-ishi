@@ -13,13 +13,15 @@ function App() {
   return (
     <MainLayout>
       <ToastContainer position="top-right" autoClose={2000} />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path='/liked' element={<Liked />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <div className='mx-auto max-w-7xl'>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path='/liked' element={<Liked />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </div>
     </MainLayout>
   );
 }

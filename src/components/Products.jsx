@@ -54,6 +54,20 @@ function Products({ searchTerm }) {
     }
   }, [searchTerm, products]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 50 && hasMore) {
+        fetchProducts();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [hasMore, loading]);
+
   function handleLiked(productId) {
     setLikedProducts((prev) => {
       const updatedLikes = { ...prev, [productId]: !prev[productId] };

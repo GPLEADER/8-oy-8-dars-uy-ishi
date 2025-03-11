@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LeftArrow from "../assets/leftArrow.svg";
 import RightArrow from "../assets/rightArrow.svg";
+import Slide1 from "../assets/firstBanner.png";
+import Slide2 from "../assets/secondBanner.png";
+import Slide3 from "../assets/thirdBanner.png";
+
 
 const slides = [
-  "https://images.uzum.uz/cv385ndpb7f9qcnfjec0/main_page_banner.jpg",
-  "https://images.uzum.uz/cule2v6i4n324lr9f34g/main_page_banner.jpg",
-  "https://images.uzum.uz/cv4o265pb7f9qcng1frg/main_page_banner.jpg",
-  "https://images.uzum.uz/cv3ehmtpb7f9qcnfmdsg/main_page_banner.jpg",
-  "https://images.uzum.uz/cv0qefrvgbkm5ehhdga0/main_page_banner.jpg",
-  "https://images.uzum.uz/cug7q9tht56sc95cis1g/main_page_banner.jpg",
-  "https://images.uzum.uz/cv0qn6ui4n36ls3s9urg/main_page_banner.jpg",
-  "https://images.uzum.uz/curg18tpb7f8r31vrhr0/main_page_banner.jpg",
+  Slide1,
+  Slide2,
+  Slide3,
 ];
 
 function Hero() {
